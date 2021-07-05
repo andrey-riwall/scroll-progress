@@ -1,9 +1,10 @@
+//progressbar
 let cursorMeter = document.getElementById('cursorMeter');
 
-// document.addEventListener('mousemove', function(e) {
-//   cursorMeter.style.top = e.clientY + "px";
-//   cursorMeter.style.left = e.clientX + "px";
-// });
+document.addEventListener('mousemove', function(e) {
+  cursorMeter.style.top = e.clientY + "px";
+  cursorMeter.style.left = e.clientX + "px";
+});
 
 let percent = document.getElementById('percent');
 let pregressBar = document.getElementById('pregressBar');
@@ -15,4 +16,9 @@ window.onscroll = function() {
   console.log(progress)
   pregressBar.style.width = progress + "%";
   percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%"
+  progessBar.style.height = progress + "%";
 };
+
+
+//scrollbar
+let progessBar = document.getElementById('progressBar');
